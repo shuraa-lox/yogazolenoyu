@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     margin: 0;
     background: #f5f7f6;
 }
@@ -21,30 +21,32 @@ section {
     padding: 40px;
 }
 
-h2 {
-    color: #333;
-}
-
 .card {
     background: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
-.card.active {
-    border: 2px solid #4CAF8A;
+.card:hover {
+    transform: scale(1.03);
 }
 
-.gallery {
-    display: flex;
-    gap: 10px;
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #4CAF8A;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.gallery img {
-    width: 30%;
-    border-radius: 10px;
+.btn:hover {
+    background: #3a8f70;
 }
 
 .trainer {
@@ -56,6 +58,21 @@ h2 {
 .trainer img {
     width: 150px;
     border-radius: 50%;
+}
+
+.phone {
+    font-size: 20px;
+}
+
+.socials a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #4CAF8A;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    text-decoration: underline;
 }
 
 footer {

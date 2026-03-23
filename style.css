@@ -82,6 +82,18 @@ footer {
     color: white;
 }
 
+/* чтобы страница не была "пустой" */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    flex: 1;
+}
+
+/* СЛАЙДЕР */
 .slider {
     display: flex;
     gap: 15px;
@@ -91,40 +103,55 @@ footer {
 }
 
 .slider img {
-    height: 280px;
-    min-width: 350px;
+    height: 300px;
+    min-width: 400px;
     object-fit: cover;
     border-radius: 12px;
     scroll-snap-align: center;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
-/* 📱 МОБИЛКА */
+/* 📱 МОБИЛКА (ВАЖНО) */
 @media (max-width: 600px) {
 
-    section {
-        padding: 20px;
-    }
-
-    .slider {
-        padding: 10px;
-        gap: 10px;
-    }
-
     .slider img {
-        height: 60vh;          /* 🔥 почти весь экран */
-        min-width: 85vw;       /* занимает почти всю ширину */
-        border-radius: 16px;
+        height: 65vh;
+        min-width: 90vw;
     }
 
-    h2 {
-        font-size: 18px;
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* 🔥 центрируем */
     }
+}
 
-    .btn {
-        display: block;
-        text-align: center;
-        margin: 20px auto;
-        width: 60%;
-    }
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+}
+
+.lightbox img {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
 }

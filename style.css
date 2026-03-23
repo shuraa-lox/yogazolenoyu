@@ -81,3 +81,33 @@ footer {
     background: #333;
     color: white;
 }
+
+.slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.slider img {
+    height: 250px; /* фиксируем высоту */
+    min-width: 300px;
+    object-fit: cover; /* магия выравнивания */
+    border-radius: 12px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.slider img:hover {
+    transform: scale(1.05);
+}
+
+/* красиво для телефона */
+@media (max-width: 600px) {
+    .slider img {
+        height: 180px;
+        min-width: 80%;
+    }
+}

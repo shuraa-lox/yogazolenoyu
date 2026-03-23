@@ -86,28 +86,45 @@ footer {
     display: flex;
     gap: 15px;
     overflow-x: auto;
-    padding: 10px;
+    padding: 20px;
     scroll-snap-type: x mandatory;
 }
 
 .slider img {
-    height: 250px; /* фиксируем высоту */
-    min-width: 300px;
-    object-fit: cover; /* магия выравнивания */
+    height: 280px;
+    min-width: 350px;
+    object-fit: cover;
     border-radius: 12px;
     scroll-snap-align: center;
     flex-shrink: 0;
-    transition: 0.3s;
 }
 
-.slider img:hover {
-    transform: scale(1.05);
-}
-
-/* красиво для телефона */
+/* 📱 МОБИЛКА */
 @media (max-width: 600px) {
+
+    section {
+        padding: 20px;
+    }
+
+    .slider {
+        padding: 10px;
+        gap: 10px;
+    }
+
     .slider img {
-        height: 180px;
-        min-width: 80%;
+        height: 60vh;          /* 🔥 почти весь экран */
+        min-width: 85vw;       /* занимает почти всю ширину */
+        border-radius: 16px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+        width: 60%;
     }
 }

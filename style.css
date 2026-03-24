@@ -55,9 +55,14 @@ section {
     gap: 20px;
 }
 
+.trainer-text {
+    font-size: 20px;
+}
+
 .trainer img {
-    width: 150px;
-    border-radius: 50%;
+    width: 20vw; 
+    height: auto;
+    border-radius: 5%;
 }
 
 .phone {
@@ -154,4 +159,24 @@ section {
     font-size: 35px;
     color: white;
     cursor: pointer;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background: #4CAF8A;
+    transform: scale(1.3);
 }

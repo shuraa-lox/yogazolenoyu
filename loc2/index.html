@@ -2,7 +2,8 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Галерея - Парк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Fitness House</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -12,16 +13,29 @@
 </header>
 
 <section>
-    <h2>Парк "Зелений"</h2>
+    <h2>Fitness House (вул. Келецька 121)</h2>
 
-    <div class="gallery">
-        <img src="../images/hall1.jpg">
-        <img src="../images/hall2.jpg">
-        <img src="../images/hall3.jpg">
+    <div class="slider" id="slider">
+        <img src="../images/2/1.jpg">
+        <img src="../images/2/2.jpg">
+        <img src="../images/2/3.jpg">
+        <img src="../images/2/4.jpg">
+        <img src="../images/2/5.jpg">
+        <img src="../images/2/6.jpeg">
+        <img src="../images/2/7.jpg">
     </div>
+
+    <div class="dots" id="dots"></div>
 
     <a class="btn" href="../index.html">Назад</a>
 </section>
+
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img">
+</div>
+
+<script src="../script.js" defer></script>
 
 </body>
 </html>

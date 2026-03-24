@@ -21,6 +21,10 @@ section {
     padding: 40px;
 }
 
+.street {
+    color: gray;
+}
+
 .card {
     background: white;
     padding: 20px;
@@ -87,7 +91,6 @@ footer {
     color: white;
 }
 
-/* чтобы страница не была "пустой" */
 body {
     min-height: 100vh;
     display: flex;
@@ -98,7 +101,6 @@ section {
     flex: 1;
 }
 
-/* СЛАЙДЕР */
 .slider {
     display: flex;
     gap: 15px;
@@ -117,7 +119,7 @@ section {
     cursor: pointer;
 }
 
-/* 📱 МОБИЛКА (ВАЖНО) */
+/* мобилка */
 @media (max-width: 600px) {
 
     .slider img {
@@ -129,6 +131,12 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center; /* 🔥 центрируем */
+    }
+
+    .trainer img {
+        width: 100%; 
+        height: auto;
+        border-radius: 5%;
     }
 }
 

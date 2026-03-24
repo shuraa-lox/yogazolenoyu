@@ -4,7 +4,7 @@ window.onload = function () {
     const dotsContainer = document.getElementById("dots");
 
     if (slider && images.length > 0 && dotsContainer) {
-        // --- создаём точки ---
+        //точки
         images.forEach((img, i) => {
             let dot = document.createElement("div");
             dot.className = "dot";
@@ -14,7 +14,7 @@ window.onload = function () {
 
         const dots = document.querySelectorAll(".dot");
 
-        // --- скролл ---
+        //скролл
         slider.addEventListener("scroll", function () {
             const sliderCenter = slider.scrollLeft + slider.clientWidth / 2;
 
@@ -35,7 +35,7 @@ window.onload = function () {
         });
     }
 
-    // --- LIGHTBOX ---
+    //картинка на весь экран
     const imagesAll = document.querySelectorAll("img");
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");

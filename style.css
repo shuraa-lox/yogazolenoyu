@@ -132,11 +132,21 @@ section {
         flex-direction: column;
         justify-content: center; /* 🔥 центрируем */
     }
+    
+    .trainer {
+        flex-direction: column; /* ГЛАВНОЕ ДОБАВЛЕНИЕ: ставит элементы друг под друга */
+        align-items: flex-start; /* Опционально: выравнивает всё по левому краю */
+    }
 
     .trainer img {
         width: 100%; 
         height: auto;
         border-radius: 5%;
+        margin-bottom: 10px; /* Добавим небольшой отступ снизу до текста */
+    }
+    
+    .trainer-text {
+        font-size: 18px; /* На мобильных текст лучше сделать чуть меньше */
     }
 }
 

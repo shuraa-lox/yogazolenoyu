@@ -18,7 +18,7 @@ nav a {
 }
 
 section {
-    padding: 40px;
+    padding: 30px;
 }
 
 .street {
@@ -99,6 +99,15 @@ body {
 
 section {
     flex: 1;
+}
+
+.bg-text {
+    font-style: italic;
+    color: gray;
+}
+
+.center {
+    text-align: center;
 }
 
 .slider {
